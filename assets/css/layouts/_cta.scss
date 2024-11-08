@@ -1,0 +1,43 @@
+
+.cta_area{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    position: relative;
+    &:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+    &::before {
+        content: "";
+        background-color: #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        opacity: .75;
+    }
+    .cta_title{
+        & h2 {
+            color: #fff;
+            font-size: 60px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        & p {
+            max-width: 658px;
+            margin: 30px auto;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+}
+
+
+

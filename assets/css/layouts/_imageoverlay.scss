@@ -1,0 +1,70 @@
+
+
+.company_service_area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &:after {
+        clear: both;
+        display: table;
+        content: ""; 
+    }
+
+    .company_title {
+        text-align: center;
+        & h2 {
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        & p {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+    }
+
+    .single_company_service {
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+        position: relative;
+        width: 380px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        & .image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            background-color: #33333370;
+            overflow: hidden;
+            transition: .5s ease;
+            & h2 {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+
+
+
